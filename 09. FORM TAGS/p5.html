@@ -1,0 +1,288 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            min-height: 100vh;
+            background-color: rgb(12, 173, 133);
+            padding: 4%;
+        }
+        form{
+            background-color: white;
+            width: 60%;
+            margin: auto;
+            padding: 30px;
+        }
+        fieldset{
+            padding: 20px;
+        }
+        legend{
+            color: rgb(12, 173, 133);
+            font-weight: bold;
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            font-size: 1rem;
+            margin-top: 3px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            background-color: rgb(249, 249, 249);
+        }
+        input[type="color"]{
+            height: 40px;
+        }
+        input[type="image"]{
+            width: 100px;
+        }
+        input[type="radio"]{
+            width: fit-content;
+            accent-color: green;
+        }
+        input[type="checkbox"]{
+            width: fit-content;
+            accent-color: red;
+        }
+        input[type="range"]{
+            accent-color: rgb(12, 173, 133);;
+        }
+        input[type="button"]{
+            width: fit-content;
+            border: none;
+            background-color: #696969;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]{
+            border: none;
+            width: fit-content;
+            background-color: rgb(12, 173, 133);
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="reset"]{
+            border: none;
+            width: fit-content;
+            background-color: rgb(222, 12, 37);
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;  
+        }
+
+        button[type="button"]{
+            width: fit-content;
+            border: none;
+            background-color: #696969;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        button[type="submit"]{
+            border: none;
+            width: fit-content;
+            background-color: rgb(12, 173, 133);
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        button[type="reset"]{
+            border: none;
+            width: fit-content;
+            background-color: rgb(222, 12, 37);
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;  
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Input text</legend>
+                <label for="name">Username</label><br>
+                <input type="text" placeholder="Enter any text" name="username" id="name" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Input email</legend>
+                <label for="">Email address</label>
+                <input type="email" placeholder="Enter email address" name="email" id="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Input password</legend>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" name="password" id="password" required minlength="8" maxlength="15">
+            </fieldset>
+
+            <fieldset>
+                <legend>Input number</legend>
+                <label for="">Age</label>
+                <input type="number" placeholder="Enter your age" required min="18" max="25">
+            </fieldset>
+
+            <fieldset>
+                <legend>Input Tel</legend>
+                <label for="">Phone number</label>
+                <input type="tel" name="phone" id="phone" placeholder="+91 000-0000-000" required minlength="10" maxlength="13">
+            </fieldset>
+
+            <fieldset>
+                <legend>Input date</legend>
+                <label for="">Select your birth date</label>
+                <input type="date">
+            </fieldset>
+
+            <fieldset>
+                <legend>Input time</legend>
+                <label for="">Select Exam time</label>
+                <input type="time">
+            </fieldset>
+
+            <fieldset>
+                <legend>Input Datetime</legend>
+                <input type="datetime" placeholder="dd-mm-yyyy and hh:mm">
+            </fieldset>
+
+            <fieldset>
+                <legend>Timetime-local</legend>
+                <label for="">Select Exam date with time</label>
+                <input type="datetime-local" required name="datetime" id="time">
+            </fieldset>
+
+            <fieldset>
+                <legend>Color</legend>
+                <label for="">Choose Product Color</label>
+                <input type="color" name="productname" id="productcolor" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Week</legend>
+                <label for="">Select exam week</label>
+                <input type="week" name="examWeek" id="week" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hidden</legend>
+                <input type="hidden" value="AC837637636" readonly disabled >
+            </fieldset>
+
+            <fieldset>
+                <legend>Image</legend>
+                <label for="">Image in input</label><br>
+                <input type="image" src="https://cdn-icons-png.freepik.com/256/4281/4281306.png?ga=GA1.1.1538238808.1729515699&semt=ais_hybrid" alt="this is the image inside the input" >
+            </fieldset>
+
+            <fieldset>
+                <legend>Month</legend>
+                <label for="">Select your birth month</label>
+                <input type="month" required id="month" name="month">
+            </fieldset>
+
+            <fieldset>
+                <legend>Search</legend>
+                <label for="">Search for products</label>
+                <input type="search" placeholder="Search products..." id="search" name="search" required    >
+            </fieldset>
+
+            <fieldset>
+                <legend>URL</legend>
+                <label for="">Website URL</label>
+                <input type="url" placeholder="https://example.com" required name="url" id="url">
+            </fieldset>
+
+            <fieldset>
+                <legend>Radio</legend>
+                <label for="">gender</label><br> <br>
+
+                <label for="">
+                    <input type="radio" name="gender" required value="male">
+                    Male
+                </label>
+
+                <label for="">
+                    <input type="radio" name="gender" required value="female">
+                    Female
+                </label>
+             
+            </fieldset>
+
+            <fieldset>
+                <legend>Checkbox</legend>
+                <label for="">Choose intrested Languages</label> <br> <br>
+
+                <label for="kannada">
+                    <input type="checkbox" required id="kannada" value="kannada" name="lang">
+                    kannada
+                </label>
+
+                <label for="english">
+                    <input type="checkbox" required id="english" value="english" name="lang">
+                    English
+                </label>
+
+                <label for="marati">
+                    <input type="checkbox" required id="marati" value="marati" name="lang">
+                    Marati
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>range</legend>
+                <label for="">Brightness</label>
+                <input type="range" min="0" max="100" value="40">
+                <br>
+                <label for="">Saturation</label>
+                <input type="range" min="0" max="100" value="10">
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Range</legend>
+                <label for="">My Skills</label>
+                <br><br>
+                <label for="">HTML</label>
+                <input type="range" min="0" max="100" value="10">
+                <br>
+                <label for="">CSS</label>
+                <input type="range" min="0" max="100" value="50">
+                <br>
+                <label for="">Javascript</label>
+                <input type="range" min="0" max="100" value="100">
+                <br>
+                <label for="">React js</label>
+                <input type="range" min="0" max="100" value="90">
+            </fieldset>
+
+            <fieldset>
+                <legend>Input Buttons</legend>
+                <input type="button" value="normal button">
+                <input type="submit" value="create account">
+                <input type="reset" value="cancel">
+            </fieldset>
+
+            <fieldset>
+                <legend>Button tags</legend>
+                <label for="">3 types of button tags (button, submit, reset)</label><br> <br>
+                <button type="button">Normal Button</button>
+                <button type="submit">Submit Button</button>
+                <button type="reset">Reset Button</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

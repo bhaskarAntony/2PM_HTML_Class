@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <title>template</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .hero{
+                display: flex;
+                padding: 4%;
+            }
+            .left{
+                flex: 1;
+            }
+            .right{
+                flex: 1;
+                text-align: center;
+            }
+            .right img{
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-top: 40px;
+            }
+            .left h2{
+                font-size: 1.5rem;
+                font-weight: 100;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+            .heading{
+                font-size: 3.5rem;
+                margin-top: 20px;
+            }
+            .left p{
+                font-size: 1.2rem;
+                margin-top: 20px;
+                line-height: 1.6;
+            }
+            ul{
+                margin-top: 30px;
+                
+            }
+            ul li{
+                list-style-image: url(./play.png);
+                font-size: 1.2rem;
+                list-style-position: inside;
+                margin-bottom: 10px; 
+            }
+            .main-btn{
+                border: none;
+                padding: 15px;
+                border-radius: 100px;
+                width: 200px;
+                font-size: 1.2rem;
+                margin-top: 10px;
+                font-weight: 600;
+                background-color: #e3f10e;
+                cursor: pointer;
+            }
+            .main-btn:hover{
+                background-color: #f3fd6a;
+            }
+            .heading2{
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+
+            .card img{
+                background-color: #0c0c0c;
+                width: 80px;
+                height: 80px;
+                padding: 10px;
+                border-radius: 100px;
+                margin-bottom: 30px;
+            }
+            .card{
+                /* border: 2px solid #000; */
+                flex: 1;
+                padding: 7% 30px;
+                text-align: center;
+                border-radius: 30px;
+                background-color: #f2f2f2;
+            }
+            .card-container{
+                display: flex;
+                padding: 4%;
+                gap:30px;
+            }
+            .card h2{
+                font-size: 1.8rem;  
+                font-weight: 200;
+                margin-bottom: 20px;
+            }
+            .card p{
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+            .card:nth-child(2){
+                background-color: #e3f10e;
+            }
+
+            .builders{
+                text-align: center;
+                padding: 4%;
+                background-color: #0c0c0c;
+                color: #fff;
+                margin-top: 30px;
+            }
+            .builders h1{
+                font-size: 2.4rem;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .builders p{
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+            .about{
+                padding: 6%;
+                background-color: #f2f2f2;
+            }
+            .about h2{
+                font-size: 2.8rem;
+                font-weight: 300;
+                margin-bottom: 10px;
+            }
+            .about p{
+                font-size: 1.35rem;
+                line-height: 1.7;
+            }
+            .about-card-container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            .about-card{
+                padding: 40px;
+                background-color: #fff;
+                border-radius: 30px;
+            }
+            .about-card h3{
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                font-weight: 100;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="left">
+                <h2>about us</h2>
+                <h1 class="heading">
+                    IT Solution Strategy <br> Development For <br> Your Bussiness
+                </h1>
+                <p>Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read.</p>
+                <ul>
+                    <li>Support via E-mail and Phone
+                    </li>
+                    <li>Multi-Language Support</li>
+                </ul>
+
+                <button class="main-btn">READ MORE</button>
+            </div>
+            <div class="right">
+                <img src="https://assets.nicepagecdn.com/11a8ddce/1522145/images/81f39daae8c1ebd09a493b7eaa7f15db.jpeg" alt="">
+            </div>
+        </div>
+        <center>
+            <h1 class="heading2">We're ready to share our advice and experience</h1>
+        </center>
+        <br>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="https://assets.nicepagecdn.com/11a8ddce/1522145/images/58067957.png" alt="">
+                <br>
+                <h2>Investment</h2>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="card">
+                <img src="https://assets.nicepagecdn.com/11a8ddce/1522145/images/0c43c48e.png" alt="">
+                <h2>Financial planning</h2>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="card">
+                <img src="https://assets.nicepagecdn.com/11a8ddce/1522145/images/fccc1f1b.png" alt="">
+                <h2>Debt help</h2>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+        </div>
+        <center>
+            <button class="main-btn">VIEW MORE</button>
+        </center>
+        <div class="builders">
+            <h1>We’re one of the largest and most established builders</h1>
+            <p>Sample text. Click to select the Text Element. Tincidunt eget nullam non nisi est. Mauris commodo quis <br> imperdiet massa tincidunt nunc pulvinar sapien. Quis  ipsum suspendisse ultrices gravida dictum. Justo nec <br> ultrices dui sapien eget mi. Turpis egestas maecenas pharetra convallis posuere morbi. Urna duis convallis <br> convallis tellus.</p>
+            <br>
+            <button class="main-btn">CONTACT US</button>
+        </div>
+
+        <div class="about">
+            <h2>About</h2>
+            <p>By understanding, imagining and expressing change, we create simpler, lighter, more desirable ideas <br> for the future. We design for life. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui <br> officia deserunt mollit anim id est laborum. </p>
+            <br>
+            <br>
+            <p>At Design Studio you will meet</p>
+
+            <br>
+
+            <div class="about-card-container">
+                <div class="about-card">
+                    <h3>Futurists</h3>
+                    <p>Morbi tincidunt augue interdum velit euismod in pellentesque. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Sed euismod nisi porta lorem. Volutpat odio facilisis mauris sit amet. Curabitur gravida arcu ac tortor dignissim convallis aenean.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Strategists</h3>
+                    <p>Morbi tincidunt augue interdum velit euismod in pellentesque. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Sed euismod nisi porta lorem. Volutpat odio facilisis mauris sit amet. Curabitur gravida arcu ac tortor dignissim convallis aenean.</p>
+                </div>
+
+
+                <div class="about-card">
+                    <h3>Designers</h3>
+                    <p>Morbi tincidunt augue interdum velit euismod in pellentesque. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Sed euismod nisi porta lorem. Volutpat odio facilisis mauris sit amet. Curabitur gravida arcu ac tortor dignissim convallis aenean.</p>
+                </div>
+
+
+                <div class="about-card">
+                    <h3>Realisers</h3>
+                    <p>Morbi tincidunt augue interdum velit euismod in pellentesque. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Sed euismod nisi porta lorem. Volutpat odio facilisis mauris sit amet. Curabitur gravida arcu ac tortor dignissim convallis aenean.</p>
+                </div>
+              
+            </div>
+        </div>
+    </body>
+</html>

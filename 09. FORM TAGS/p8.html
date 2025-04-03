@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Form Tags</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                box-sizing: border-box;
+            }
+            .container{
+                min-height: 100vh;
+                background-color: rgb(248, 248, 248);
+                padding: 4%;
+            }
+            .container form{
+                width: 300px;
+                background-color: #fff;
+                padding: 30px;
+                margin: auto;
+                box-shadow: 0px 10px 10px #777777; /*x-axis y-axis blur or distance of the shadow color*/
+            }
+            form select{
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 8px;
+                border: 1px solid #ccc;
+                margin-top: 3px;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+            form button{
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                border: none;
+                background-color: #0c0c0c;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            form button:hover{
+                background-color: #282828;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+        <form action="">
+            <label for="">Select Course</label>
+            <select name="Course" id="course" required>
+                <option value="" disabled selected>Choose course</option>
+                <option value="mern_fullstack">MERN Fullstack</option>
+                <option value="mean_fulltsack">MEAN Fullstack</option>
+                <option value="java_fullstack">Java Fullstack</option>
+                <option value="python_fullstack">Python Fullstack</option>
+                <option value="digital_marketing">Digital Marketing</option>
+            </select>
+            <button type="submit">Send</button>
+        </form>
+       </div>
+    </body>
+</html>

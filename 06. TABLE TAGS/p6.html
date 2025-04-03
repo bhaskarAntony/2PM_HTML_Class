@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>TABLES</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            th{
+                background-color: darkslategrey;
+                color: white;
+                border: 1px solid white;
+            }
+            td{
+                border: 1px solid darkslategrey;
+                color: darkslategrey;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>HTML TABLES => rowspan attribute</h1>
+            <p>to place multiple rows in a single column we can use rowspan attribute</p>
+        </center>
+        <hr>
+        <table border="1" cellspacing="0" cellpadding="15" align="center">
+            <tr>
+                <th rowspan="3">username</th>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <td>Arun</td>
+                <td>Naveen</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>Kumar</td>
+                <td>Kiran</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Phonenumber</th>
+            </tr>
+            <tr>
+                <th>Office Number</th>
+                <td>+91837867644</td>
+                <td>+91983873763</td>
+            </tr>
+            <tr>
+                <th>Home Number</th>
+                <td>+91837337668</td>
+                <td>+91837837833</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <th></th>
+                <td>arun@gmail.com</td>
+                <td>kiran@gmail.com</td>
+            </tr>
+        </table>
+    </body>
+</html>

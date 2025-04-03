@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Form Tags</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                box-sizing: border-box;
+            }
+            .container{
+                min-height: 100vh;
+                background-color: rgb(248, 248, 248);
+                padding: 4%;
+            }
+            .container form{
+                width: 300px;
+                background-color: #fff;
+                padding: 30px;
+                margin: auto;
+                box-shadow: 0px 10px 10px #777777; /*x-axis y-axis blur or distance of the shadow color*/
+            }
+            form select{
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 8px;
+                border: 1px solid #ccc;
+                margin-top: 3px;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+            form button{
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                border: none;
+                background-color: #0c0c0c;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            form button:hover{
+                background-color: #282828;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+        <form action="">
+            <label for="">Select Food</label>
+            <select name="Food" id="food" > <!--multiple attribute is used to select the multiple options-->
+                <option value="" disabled selected>Choose Food</option>
+
+              <optgroup label="North indian foods" style="color: orangered;">
+                <hr>
+                <option value="Chapathi">Chapathi</option>
+                <option value="lemon rice">lemon rice</option>
+                <option value="Puliyogre">Puliyogre</option>
+                <option value="Bisi bele bath">Bisi bele bath</option>
+                <option value="paneer Gravy">paneer Gravy</option>
+                <option value="Butter Chiken">Butter Chiken</option>
+              </optgroup>
+              <hr>
+
+
+              <optgroup label="South Indian foods" style="color: green;">
+                <hr>
+                <option value="idli">idli</option>
+                <option value="vada">vada</option>
+                <option value="Masala Dosa">Masala Dosa</option>
+                <option value="puri">puri</option>
+                <option value="Ragi Ball">Ragi Ball</option>
+              </optgroup>
+              <hr>
+
+             <optgroup label="chainees Foods" style="color: red;">
+                <hr>
+                <option value="Chicken Noodles">Chicken Noodles</option>
+                <option value="Veg Soup">Veg Soup</option>
+                <option value="Momos">Momos</option>
+                <option value="Egg Rice">Egg Rice</option>
+             </optgroup>
+             <hr>
+
+           <optgroup label="ice creams" style="color: blue;">
+            <hr>
+            <option value="Vanila Ice Cream">Vanila Ice Cream</option>
+            <option value="Butter Scratch">Butter Scratch</option>
+            <option value="Chackobar">Chackobar</option>
+            <option value="Pista">Pista</option>
+           </optgroup>
+
+
+            </select>
+            <button type="button" onclick="Order()">Order Now</button>
+        </form>
+       </div>
+
+      
+       <script>
+        var selectTag = document.getElementById('food');
+        
+        function Order(){
+            // console.log('hello world');
+            console.log(selectTag.value);
+            alert('your are ordered '+ selectTag.value)
+        }
+
+       </script>
+    </body>
+</html>

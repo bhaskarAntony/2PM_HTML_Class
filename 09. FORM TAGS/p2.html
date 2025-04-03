@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>HTML FORM</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            body{
+                background-color: rgb(7, 133, 51);
+                padding: 4%;
+            }
+            form{
+                width: 300px;
+                margin: auto;
+                padding: 20px;
+                border: 2px solid rgb(225, 225, 225);
+                background-color: white;
+            }
+            form input{
+                width: 100%;
+                border: none;
+                outline: none;
+                border: 1px solid gray;
+                padding: 8px;
+                font-size: 16px;
+                margin-bottom: 10px;
+                margin-top: 3px;
+                border-radius: 5px;
+            }
+            form button{
+                width: 100%;
+                border: none;
+                padding: 8px;
+                font-size: 16px;
+                border-radius: 5px;
+                background-color: rgb(7, 133, 51);
+                color: white;
+            }
+            form a{
+                color: rgb(7, 133, 51);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <center></center> -->
+         <form autocomplete="off">
+            <h2>Create account</h2><hr>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your name" required>
+
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+
+            <label for="phone">Phone number</label>
+            <input type="tel" placeholder="+91 000-0000-000" name="phonenumber" id="phone" required minlength="10" maxlength="13">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="create password" required>
+            <p>Do you have an already account? <a href="./p3.html">Sign in</a></p><br>
+            <button type="submit">Create account</button>
+         </form>
+    </body>
+</html>

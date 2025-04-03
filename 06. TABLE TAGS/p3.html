@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>HTML TABLES</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                width: 50%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            th{
+                background-color: orange;
+                color: white;
+            }
+            td{
+                color: rgb(67, 67, 67);
+            }
+            tr:nth-child(2) td:nth-child(1){
+               background-color: gray;
+               color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>HTML TABLE => colspan attribute</h1>
+            <p>To place mutliple columns in a single column we can use one attribute that is colspan attribute(columnspan) for any column</p>
+        </center>
+        <table border="1" cellspacing="0" cellpadding="15" align="center">
+            <tr>
+                <th>Time Slot</th>
+                <th colspan="2">Day1</th>
+                <th colspan="2">Day2</th>
+            </tr>
+            <tr>
+                <td>7:00 AM</td>
+                <td>Session1</td>
+                <td>Session2</td>
+                <td>Session3</td>
+                <td>Session4</td>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>Keynote</td>
+                <td>Workshop</td>
+                <td>Pannel</td>
+                <td>Networking</td>
+            </tr>
+        </table>
+    </body>
+</html>

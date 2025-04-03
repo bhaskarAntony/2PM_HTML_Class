@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>HTML FORMS</title>
+        <style>
+             *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            min-height: 100vh;
+            background-color: rgb(12, 173, 133);
+            padding: 4%;
+        }
+        form{
+            background-color: white;
+            width: 60%;
+            margin: auto;
+            padding: 30px;
+        }
+        fieldset{
+            padding: 20px;
+        }
+        legend{
+            color: rgb(12, 173, 133);
+            font-weight: bold;
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            font-size: 1rem;
+            margin-top: 3px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            background-color: rgb(249, 249, 249);
+        }
+        button[type="submit"]{
+            border: none;
+            width: fit-content;
+            background-color: rgb(12, 173, 133);
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        button[type="reset"]{
+            border: none;
+            width: fit-content;
+            background-color: rgb(222, 12, 37);
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;  
+            padding: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="">
+                <fieldset>
+                    <legend>input single file</legend>
+                    <label for="">Select your profile</label>
+                    <input type="file" name="profile" id="profile">
+                </fieldset>
+                <fieldset>
+                    <legend>Input Multiple file</legend>
+                    <label for="">Choose image to convert to PDF</label>
+                    <input type="file" id="PDF_files" name="PDF_files" multiple>
+                </fieldset>
+                <fieldset>
+                    <legend>Action</legend>
+                    <button type="submit">Upload</button>
+                    <button type="reset">Cancel</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

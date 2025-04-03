@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>HTML ANCHOR TAGS</title>
+        <style>
+            .image-btn{
+                display: block;
+                background-color: darkred;
+                color: white;
+                width: 150px;
+                text-align: center;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+
+            .video-btn{
+                text-decoration: none;
+                background-color: white;
+                display: block;
+                width: 150px;
+                padding: 10px;
+                border: 2px solid green;
+                color: green;
+                border-radius: 100px;
+            }
+            .pdf-btn{
+                display: block;
+                background-color: rgb(53, 19, 244);
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+                width: 150px;
+            }
+            .audio-btn{
+                display: block;
+                padding: 10px;
+                width: 150px;
+                background-color: rgb(249, 58, 67);
+                color: white;
+                text-decoration: none;
+                border-radius: 100px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>HTML ANCHOR TAGS</h1>
+        <hr>
+        <h1>Creating image download button</h1>
+        <p>we can create a download buttons in web pages using <b>download attribute</b></p>
+        <hr>
+
+      <center>
+        <img src="./tech_image.png" width="200" alt="">
+        <br>
+        <br>
+        <a href="./tech_image.png" download="./tech_image.png" class="image-btn">Download image</a>
+      </center>
+
+      <hr>
+    
+      <center>
+        <p>Downloading videos</p>
+        <video src="./tech_video.mp4" width="200" autoplay loop></video>
+        <br>
+        <br>
+        <a href="./tech_video.mp4" download="./tech_video.mp4" class="video-btn">Download video</a>
+      </center>
+
+      <hr>
+
+      <center>
+        <p>Downloading PDF</p>
+        <hr>
+        <iframe src="./computer_doc.pdf" frameborder="0" width="200"></iframe>
+        <hr>
+        <a href="./computer_doc.pdf" download="./computer_doc.pdf" class="pdf-btn">Download PDF</a>
+      </center>
+
+      <hr>
+
+      <center>
+        <p>Downloading Audio</p>
+        <audio src="./audio_Example.mp3" controls loop></audio>
+        <br>
+        <br>
+        <a href="./audio_Example.mp3" download="./audio_Example.mp3" class="audio-btn">Download Audio</a>
+      </center>
+    </body>
+</html>
